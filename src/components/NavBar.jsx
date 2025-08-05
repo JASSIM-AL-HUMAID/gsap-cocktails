@@ -32,14 +32,13 @@ const NavBar = () => {
             { backgroundColor: "transparent" },
             {
                 backgroundColor: "#00000050",
-                duration: 1,
-                ease: "power1.inOut",
+                "--blur-amount" : "10px"
             }
         );
     });
 
     return (
-        <nav>
+        <nav className="backdrop-blur-[var(--blur-amount)] [var(--blur-amount:0px)]">
             <div>
                 <a href="#home" className="flex items-center gap-2" id="logo">
                     <img src="/images/logo.png" alt="logo" />
